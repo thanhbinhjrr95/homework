@@ -6,9 +6,14 @@ body{
 	padding: 0;
 }
 
-.wrap1 {margin: 50px;
+.wrap {
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+
+.wrap1 {margin: auto;
 	background-color: white;
-	height:  520px;
 	display: block;
 	width: 1200px;
 }
@@ -137,7 +142,7 @@ img {
 }
 
 .wrap2{
-	height: 2000px;
+	
     background-color: #f9eded;
     
 }
@@ -273,7 +278,7 @@ body{
 	padding: 0;
 }
 
-.wrap1 {margin: 50px;
+.wrap1 { margin: auto;
 	background-color: white;
 	height:  520px;
 	display: block;
@@ -613,8 +618,9 @@ img {
 }
 
 .star {
+
 	position: absolute;
-	left: -31px;
+	left: 12px;
 	top: 90px;
 }
 
@@ -625,6 +631,10 @@ img {
 
 .star {
 	top: 90px;
-	position: absolute;
-	left: -31px;
+    position: absolute;
+    left: 12px;
+    color: orange;
+}
+.clear {
+	clear: both;
 }
