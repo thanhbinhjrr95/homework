@@ -103,14 +103,14 @@ img {
 }
 
 .slogan {
-
+	max-width: 50%;
 	margin: auto;
 	float: left;
 }
 
 .post {
 
-	
+	max-width: 50%;
 	margin: auto;
 	float: right;
 }
