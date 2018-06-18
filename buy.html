@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="about.css">
+<link rel="stylesheet" type="text/css" href="buy.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -17,6 +17,24 @@
 	<div class="wrap">
 
 
+
+		
+	
+		<div class="container">
+				
+			<div class="background">
+					
+				<div class="bar">
+						
+					<div class="bar-content">
+						<span><p>Free shipping on all orders $50+</p></span>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
 		
 
 		<div class="header">
@@ -68,6 +86,12 @@
 
 
 
+		<div class="clear"></div>
+
+		</div>
+
+
+
 		<div class="content">
 
 
@@ -82,72 +106,271 @@
 
 				<div class="line"></div>
 
-
 			</div>
 
 
 
-			<div class="product">
+			<div class="main-content">
 
-				<div class="all">
 				
+				
+				<div class="photo">
 					
-					<div class="imagee">
+					<div class="slideshow-container">
+
+						<div class="mySlides fade">
+						  
+						  <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/13_large.png?v=1527291293" style="width:100%">
+						  
+						</div>
+
+						<div class="mySlides fade">
 						
-						<img src="https://cdn.shopify.com/s/files/1/2378/0843/products/1_large.png?v=1527291252">
+						  <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/4_large.png?v=1527291276" style="width:100%">
+					
+						</div>
+
+						<div class="mySlides fade">
+						
+						  <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/8_large.png?v=1527291267" style="width:100%">
+						
+						</div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 					</div>
-
-
-
-					<div class="info">
 						
-						<div class="info1">
-							
-							<span><p> Mens Cotton Stretch Underwear 3 Pack - Black</p></span>
 
-						</div>
 
-						<div class="info2">
-							
-							<span><p>$38.00</p></span>
+						<script>
+							var slideIndex = 1;
+							showSlides(slideIndex);
 
-						</div>
+							function plusSlides(n) {
+							  showSlides(slideIndex += n);
+							}
 
-						<div class="info3">
-							
-							<div id="menu-search">
-								
-								<input type="textt" name="search" id="ipt-search" placeholder="1">
+							function currentSlide(n) {
+							  showSlides(slideIndex = n);
+							}
 
-							</div>
+							function showSlides(n) {
+							  var i;
+							  var slides = document.getElementsByClassName("mySlides");
+							  var dots = document.getElementsByClassName("dot");
+							  if (n > slides.length) {slideIndex = 1}    
+							  if (n < 1) {slideIndex = slides.length}
+							  for (i = 0; i < slides.length; i++) {
+							      slides[i].style.display = "none";  
+							  }
+							  for (i = 0; i < dots.length; i++) {
+							      dots[i].className = dots[i].className.replace(" active", "");
+							  }
+							  slides[slideIndex-1].style.display = "block";  
+							  dots[slideIndex-1].className += " active";
+							}
+						</script>
 
-							<div class="button">
-								
-								<input type="submit" id="contact" value="Add to cart" class="btn-primary">
-
-							</div>
-
-						</div>
-
-					</div>
-				
 				</div>
 
 
+
+
+
+				<div class="note">
+					
+					<div class="note1">
+						
+						<span><p>Boy 2 Packs-Cotton Stretch</p></span>
+						<span><p>$22.00</p></span>
+
+					</div>
+
+
+					<div class="note2">
+
+						<span><p>Decription:</p></span>
+
+					</div>
+
+					<div class="note3">
+						
+						<span><p>1) Adam Underwear Collection For Boys</p></span>
+						<span><p>2) Made with a perfect blend of cotton & elastane for maximum comfort</p></span>
+						<span><p>3) Breathable feel & perfect fit</p></span>
+						<span><p>4) Soft elastic waste band</p></span>
+						<span><p>5) Machine washable fabric</p></span>
+
+					</div>
+
+					<div class="note4">
+						
+						<input type="submit" id="contact" value="S" class="btn-primary">
+						<input type="submit" id="contact" value="M" class="btn-primary">
+						<input type="submit" id="contact" value="L" class="btn-primary">
+						<input type="submit" id="contact" value="XL" class="btn-primary">
+						
+					</div>
+
+
+					<div class="note5">
+						
+						<button  class="btn btn-cart" type="submit" id="add-to-cart">
+							<span class="btn_wrapper">Add to cart</span>
+						
+						</button>
+
+
+					</div>
+
+				</div>
+			
+
+			<div class="clear"></div>
+
 			</div>
 
+
+
+			<div class="linee"></div>
+
+
+		<div class="footer">
+			
+
+			<div class="foot">
+				
+				<div class="foot1">
+
+					<div class="banner-footer">
+						<span><p>ADAM UNDERWEAR</p></span>
+					</div>
+					
+					<div class="img-footer">
+						<img src="https://pbs.twimg.com/profile_images/689560416343756802/VDludH_b.png">
+					</div>
+
+
+				</div>
+					
+				<div class="foot2">
+
+					<span><p>Shop</p></span>
+
+					<div class="title1">	
+						<a href="new-featured.html"> New Featured </a>
+					</div>
+
+					<div class="title2">
+						<a href="calvin-klein.html"> Calvin Klein</a>
+					</div>
+
+					<div class="title3">
+						<a href="armani.html"> Emporio Armani</a>
+					</div>
+
+					<div class="title4">
+						<a href="cr7.html"> CR7</a>
+					</div>
+
+					<div class="title5">
+						<a href="versace.html"> Versace</a>
+					</div>
+
+				</div>
+
+				
+
+
+				<div class="foot3">
+					
+					<span><p>About Us</p></span>
+
+					<div class="contact">
+						
+						<div class="contact1">
+							<a href="about.html">About Us</a>
+						</div>
+
+						<div class="contact2">
+							<a href="help.html">Help</a>
+						</div>
+
+						<div class="contact3">
+							<a href="store.html">Store</a>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="foot4">
+					
+					<span><p>ADAM UNDERWEAR</p></span>
+
+					<div class="col">
+						<span><p>We promise to send you only the inspiring, uplifting , and time sensitive.</p></span>
+					</div>
+
+					<div class="icon">
+						<i class="fab fa-facebook-square"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+
+				</div>
+
+			</div>
 
 		</div>
 
 
 
 
-
-
-
-
 	</div>
+
+
+	
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
+
+			<script>
+			
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			        document.getElementById("myBtn").style.display = "block";
+			    } else {
+			        document.getElementById("myBtn").style.display = "none";
+			    }
+			}
+			
+			function topFunction() {
+			    document.body.scrollTop = 0;
+			    document.documentElement.scrollTop = 0;
+			}
+			</script>
+
+
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -24,10 +24,54 @@ p{
 	
 }
 
+
+
+.container {
+  display: block;
+}
+
+.background {
+  opacity: 1;
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+    height: 29px;
+    width: 100%;
+    z-index: 100000;
+    top: 0px;
+    position: fixed;
+}
+
+.bar {
+      text-align: center;
+    margin: 0px;
+    padding: 4px 10px;
+    left: 0px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    position: absolute;
+    background-color: rgb(0, 171, 238);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 17.5px;
+    font-family: "Open Sans";
+}
+
+.bar-content {
+  text-align: center;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+
+
 .header {
   max-width: 1200px;
   margin: 0 auto;
   display: block;
+  padding-top: 30px;
 
 }
 
@@ -95,7 +139,7 @@ p{
   color: #000;
   font-family: sans-serif;
   font-size: 18px;
-  font-weight: bold
+  font-weight: bold;
 }
 
 
@@ -124,7 +168,7 @@ p{
 
 .slide {
 	max-width: 1200px;
-	padding-top: 60px;
+	padding-top: 30px;
 	margin: auto;
 }
 
@@ -133,14 +177,14 @@ body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 1200px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -155,18 +199,18 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+
 .text {
   color: grey;
   font-size: 15px;
@@ -177,14 +221,13 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/*style frame*/
+
 
 .frame {
 	height: 600px;
 	max-width: 1200px;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -200,7 +243,7 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -218,7 +261,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -228,7 +271,7 @@ img {vertical-align: middle;}
 .collect {
   max-width: 1200px;
   margin: auto;
-  padding-top: 25px;
+  padding-top: 100px;
 }
 
 .feature {
@@ -263,12 +306,19 @@ font-family: unset;
   float: left;
   width: 25%;
   padding-left: 10px;
-  height: 
+  
+}
+
+.underwear1:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
 }
 
 .underwear1 a:hover {
-  color: green;
+  color: #24a9e2;
 }
+
 
 .underwear2  a {
 text-decoration: none;
@@ -283,7 +333,14 @@ font-family: unset;
   padding-left: 10px;
 }
 .underwear2 a:hover {
-  color: green;
+  color: #24a9e2;
+}
+
+
+.underwear2:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
 }
 
 .underwear3  a {
@@ -293,7 +350,7 @@ font-size: 19px;
 font-family: unset;
 }
 .underwear3 a:hover {
-  color: green;
+  color: #24a9e2;
 }
 
 .underwear3 {
@@ -301,6 +358,14 @@ font-family: unset;
   width: 25%;
   padding-left: 10px;
 }
+
+
+.underwear3:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+}
+
 
 .underwear4  a {
 text-decoration: none;
@@ -310,7 +375,7 @@ font-family: unset;
 }
 
 .underwear4 a:hover {
-  color: green;
+  color: #24a9e2;
 }
 
 .underwear4 {
@@ -318,6 +383,14 @@ font-family: unset;
   width: 25%;
   padding-left: 10px;
 }
+
+
+.underwear4:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+}
+
 
 .underwear5  a {
 text-decoration: none;
@@ -333,7 +406,14 @@ font-family: unset;
 }
 
 .underwear5 a:hover {
-  color: green;
+  color: #24a9e2;
+}
+
+
+.underwear5:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
 }
 
 .underwear6  a {
@@ -350,8 +430,16 @@ font-family: unset;
 }
 
 .underwear6 a:hover {
-  color: green;
+  color: #24a9e2;
 }
+
+
+.underwear6:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+}
+
 
 .underwear7  a {
 text-decoration: none;
@@ -367,8 +455,17 @@ font-family: unset;
 }
 
 .underwear7 a:hover {
-  color: green;
+  color: #24a9e2;
 }
+
+
+.underwear7:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+}
+
+
 
 .underwear8  a {
 text-decoration: none;
@@ -385,8 +482,16 @@ font-family: unset;
 
 
 .underwear8 a:hover {
-  color: green;
+  color: #24a9e2;
 }
+
+
+.underwear8:hover {
+  transform: translate(0,-5px);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+}
+
 
 
 .product {
@@ -418,6 +523,7 @@ img {
 .production1 {
 	width: 33.33%;
 	float: left;
+  position: relative;
 }
 
 
@@ -425,9 +531,19 @@ img {
 	width: 33.33%;
 	float: left;
 }
+
+.pro1 {
+  position: relative;
+}
+
+.pro2 {
+  position: relative;
+}
+
 .production3 {
 	width: 33.33%;
 	float: left;
+  position: relative;
 }
 
 .image1 img {
@@ -470,10 +586,10 @@ img {
 
 .advertise1 {
     position: absolute;
-    top: 260px;
-    left: 65px;
+    top: 43%;
+    left: 12%;
     font-size: 40px;
-    color: green;
+    color: #24a9e2;
     opacity: 0;
     transition: 1s;
 }
@@ -483,10 +599,10 @@ img {
 
 .advertise2 {
 	position: absolute;
-    top: 140px;
-    left: 500px;
+    top: 50%;
+    left: 30%;
     font-size: 40px;
-    color: green;
+    color: #24a9e2;
     opacity: 0;
     transition: 1s;
 }
@@ -497,10 +613,10 @@ img {
 
 .advertise3 {
 	position: absolute;
-    top: 365px;
-    left: 545px;
+    top: 40%;
+    left: 40%;
     font-size: 40px;
-    color: green;
+    color: #24a9e2;
     opacity: 0;
     transition: 1s;
 }
@@ -512,10 +628,10 @@ img {
 
 .advertise4 {
     position: absolute;
-    top: 230px;
-    left: 923px;
+    top: 40%;
+    left: 30%;
     font-size: 40px;
-    color: green;
+    color: #24a9e2;
     opacity: 0;
     transition: 1s;
 }
