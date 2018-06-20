@@ -2,6 +2,7 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -14,9 +15,11 @@
 
 <body>
 
-	<div class="wrap">
-	
-		<div class="container">
+
+
+
+
+	<div class="container">
 				
 			<div class="background">
 					
@@ -30,9 +33,15 @@
 
 			</div>
 
-		</div>
+	</div>
 
+
+
+
+	<div class="wrap">
+	
 		
+
 		
 
 		<div class="header">
@@ -52,11 +61,11 @@
 					
 					<ul class="left-side-menu">
 						
-						<li class="navigation-link"><a href="new-featured.html">New Featured </a></li>
-						<li class="navigation-link"><a href="calvin-klein.html">Calvin Klein</a></li>
-						<li class="navigation-link"><a href="armani.html">Emporio Armani</a></li>
-						<li class="navigation-link"><a href="cr7.html">CR7</a></li>
-						<li class="navigation-link"><a href="versace.html">Versace</a></li>
+						<li class="navigation-link "><a href="new-featured.html">New Featured </a></li>
+						<li class="navigation-link "><a href="calvin-klein.html">Calvin Klein</a></li>
+						<li class="navigation-link "><a href="armani.html">Emporio Armani</a></li>
+						<li class="navigation-link "><a href="cr7.html">CR7</a></li>
+						<li class="navigation-link "><a href="versace.html">Versace</a></li>
 						
 					</ul>
 
@@ -67,9 +76,9 @@
 
 					<ul class="right-side-menu">
 						
-						<li class="navigation-link"><a href="about.html">About Us</a></li>
-						<li class="navigation-link"><a href="help.html">Help</a></li>
-						<li class="navigation-link"><a href="store.html">Store</a></li>
+						<li class="navigation-link "><a href="about.html">About Us</a></li>
+						<li class="navigation-link "><a href="help.html">Help</a></li>
+						<li class="navigation-link "><a href="store.html">Store</a></li>
 
 					</ul>
 
@@ -77,6 +86,10 @@
 
 
 			</div>
+
+
+
+			
 
 		<div class="clear"></div>
 
@@ -87,93 +100,19 @@
 		<div class="slide">
 
 			
-			<div class="slideshow-container">
+			<div class="content-section" style="max-width:100%">
 
-				<div class="mySlides fade">
+				  <img class="mySlides w3-animate-fading" src="http://lifestyle.inquirer.net/files/2015/06/Justin-Bieber-HK2.jpg" style="width:100%">
 
-				 	 <div class="frame">
+				  <img class="mySlides w3-animate-fading" src="https://metrouk2.files.wordpress.com/2013/08/ay116641182david-beckham-hn.jpg" style="width:100%">
 
-				 		<video width="100%" height="700" controls autoplay>
+				  <img class="mySlides w3-animate-fading" src="https://media.gqindia.com/wp-content/uploads/2016/04/Ronaldo-underwear-body-fitness-football.jpg" style="width:100%">
 
-						  <source src="ronaldo.mp4" type="video/mp4">					  
-	
-						</video> 
-
-						<div class="text">Ronaldo Cr7</div>
-
-				 	</div>
-				 	
-				</div>
-
-				<div class="mySlides fade">
-
-				  	 <div class="frame">
-
-				 		<video width="100%" height="700" controls>
-
-						  <source src="justin bieber.mp4" type="video/mp4">					  
-	
-						</video> 
-
-						<div class="text">Justin Bieber Calvin Klein</div>
-
-				 	</div>
-
-				</div>
-
-				<div class="mySlides fade">
-	
-				  	 <div class="frame">
-
-				 		<video width="100%" height="700" controls>
-
-						  <source src="davidbeckham.mp4" type="video/mp4">					  
-	
-						</video> 
-
-						<div class="text">David Beckham Versace</div>
-
-				 	</div>
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				  
 
 			</div>
-				<br>
 
-				<div style="text-align:center ; padding-top:110px;">
-				  <span class="dot" onclick="currentSlide(1)"></span> 
-				  <span class="dot" onclick="currentSlide(2)"></span> 
-				  <span class="dot" onclick="currentSlide(3)"></span> 
-				</div>
-
-				<script>
-					var slideIndex = 1;
-					showSlides(slideIndex);
-					function plusSlides(n) {
-					  showSlides(slideIndex += n);
-					}
-					function currentSlide(n) {
-					  showSlides(slideIndex = n);
-					}
-					function showSlides(n) {
-					  var i;
-					  var slides = document.getElementsByClassName("mySlides");
-					  var dots = document.getElementsByClassName("dot");
-					  if (n > slides.length) {slideIndex = 1}    
-					  if (n < 1) {slideIndex = slides.length}
-					  for (i = 0; i < slides.length; i++) {
-					      slides[i].style.display = "none";  
-					  }
-					  for (i = 0; i < dots.length; i++) {
-					      dots[i].className = dots[i].className.replace(" active", "");
-					  }
-					  slides[slideIndex-1].style.display = "block";  
-					  dots[slideIndex-1].className += " active";
-					}
-				</script>
-
+				
 
 
 		<div class="clear"></div>
@@ -197,27 +136,27 @@
 				
 				<div class="collect-img1">
 
-					<div class="underwear1">
+					<div class="underwear1 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/8400-51-520-c_large.jpg?v=1527291507"></a>
-						<a href="buy.html"> Mens 2 Pack Trunks-Fashion </a>
+						<a href="buy.html"> Mens 2 Pack Trunks-Fashion </a></br>
 						<a href="buy.html"> $32.00 </a>
 					</div>
 
-					<div class="underwear2">
+					<div class="underwear2 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/8400-51-519-c_large.jpg?v=1527291492"></a>
-						<a href="buy.html"> CR7 Mens Cotton Stretch </a>
+						<a href="buy.html"> CR7 Mens Cotton Stretch </a></br>
 						<a href="buy.html"> $38.00 </a>
 					</div>
 
-					<div class="underwear3">
+					<div class="underwear3 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/8400-51-518-c_large.jpg?v=1527291478"></a>
-						<a href="buy.html"> Mens 2 Pack Trunks Camo </a>
+						<a href="buy.html"> Mens 2 Pack Trunks Camo </a></br>
 						<a href="buy.html"> $34.00 </a>
 					</div> 
 
-					<div class="underwear4">
+					<div class="underwear4 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/8400-51-522-c_large.jpg?v=1527291529"></a>
-						<a href="buy.html"> Mens 3 Pack Trunks-Basics </a>
+						<a href="buy.html"> Mens 3 Pack Trunks-Basics </a></br>
 						<a href="buy.html"> $38.00 </a>
 					</div>
 
@@ -226,27 +165,27 @@
 
 				<div class="collect-img2">
 
-					<div class="underwear5">
+					<div class="underwear5 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/14_large.png?v=1527291296"></a>
-						<a href="buy.html"> Mens 2 Pack Trunks-Fashion </a>
+						<a href="buy.html"> Mens 2 Pack Trunks-Fashion </a></br>
 						<a href="buy.html"> $32.00 </a>
 					</div>
 
-					<div class="underwear6">
+					<div class="underwear6 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/12_large.png?v=1527291290"></a>
-						<a href="buy.html"> CR7 Mens Cotton Stretch  </a>						
+						<a href="buy.html"> CR7 Mens Cotton Stretch  </a></br>						
 						<a href="buy.html"> $38.00 </a>
 					</div>
 
-					<div class="underwear7">
+					<div class="underwear7 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/13_large.png?v=1527291293"></a>
-						<a href="buy.html"> Boys 2 Pack Cotton Stretch  </a>
+						<a href="buy.html"> Boys 2 Pack Cotton Stretch  </a></br>
 						<a href="buy.html"> $34.00 </a>
 					</div> 
 
-					<div class="underwear8">
+					<div class="underwear8 a">
 						<a href="buy.html"> <img src="https://cdn.shopify.com/s/files/1/2378/0843/products/14_large.png?v=1527291296"></a>
-						<a href="buy.html"> Mens 3 Pack Trunks-Basics </a>
+						<a href="buy.html"> Mens 3 Pack Trunks-Basics </a></br>
 						<a href="buy.html"> $38.00 </a>
 					</div>
 
@@ -278,7 +217,7 @@
 					<span><p>ADAM UNDERWEAR IS MODERN AND INTERNATIONAL FASHION WITH A WIDESPREAD APPEAL TO BOYS AND MEN ALL </p></span>
 					<span><p>OVER THE WORLD. CREATING TRENDS BASED ON HIGH QUALITY PRODUCTION, THE DESIGNS ARE MADE TO MEET </p></span>
 					<span><p>THE HIGH EXPECTATIONS OF OUR CUSTOMERS. WORKING WITH QUALITY MATERIALS AND MANY YEARS OF </p></span>
-					<span><p>EXPERIENCE OF PRODUCING UNDERWEAR, THE CR7 COLLECTIONS DELIVERS A PERFECT FIT.</p></span>
+					<span><p>EXPERIENCE OF PRODUCING UNDERWEAR, ADAM UNDERWEAR COLLECTIONS DELIVERS A PERFECT FIT.</p></span>
 				</div>
 
 				<div class="name4">
@@ -347,7 +286,7 @@
 						<span><p>VERSACE</p></span>
 					</div>
 					<div class="image4">
-						<a href="versace.html"><img src="https://alainezzeddine.files.wordpress.com/2013/08/david-beckham-hm-14-vogue-21aug13-pr_b_592x888.jpg">
+						<a href="versace.html"><img src="http://i.dailymail.co.uk/i/pix/2014/01/24/article-0-1AE8EC0200000578-35_634x811.jpg">
 						</a>
 					</div>
 				</div>
@@ -484,6 +423,41 @@
 		}
 		
 		</script>
+
+
+
+
+		<script>
+
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 4000);    
+				}
+
+		</script>
+
+
+
+		<script>
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+
 
 
 </body>
