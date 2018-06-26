@@ -794,12 +794,19 @@ margin: auto;
 @media only screen and (max-width: 450px) {
 .a {
   width: 100%;
+
 }
+
+.a a {
+  font-size: 15px;
+}
+
+
 }
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 .a {
   width: 100%;
 }
@@ -907,8 +914,6 @@ margin: auto;
     display: none;
   }
 }
-
-
 
 
 
